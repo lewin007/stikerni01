@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     for (let i = 1; i <= totalImages; i++) {
         const img = document.createElement('img');
-        img.src = `images/stiker (${i}).JPG`;
+        img.src = `stiker (${i}).JPG`;
         img.alt = `Sticker ${i}`;
         img.addEventListener('click', function() {
             lightboxContent.src = this.src;
