@@ -7,42 +7,21 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <div class="header-container">
-            <h1>Welcome to Our Sticker Shop</h1>
-            <nav>
-                <ul>
-                    <li><a href="#gallery">Gallery</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
+    <div class="container">
+        <h1>Welcome to Our Sticker Shop</h1>
+        <div class="contact-info">
+            <p>Contact us:</p>
+            <p><strong>Phone:</strong> 53204620</p>
+            <p><strong>Instagram:</strong> <a href="https://www.instagram.com/stikerni_pro/" target="_blank">@stikerni_pro</a></p>
         </div>
-    </header>
-    
-    <section id="gallery" class="gallery">
-        <h2>Sticker Gallery</h2>
-        <div class="thumbnails"></div>
-    </section>
-
-    <section id="contact" class="contact">
-        <h2>Contact Us</h2>
-        <p>Feel free to reach out to us!</p>
-        <p>Phone: 53204620</p>
-        <p>Instagram: <a href="https://www.instagram.com/stikerni_pro/" target="_blank">@stikerni_pro</a></p>
-    </section>
-
-    <footer>
-        <div class="footer-container">
-            <p>&copy; 2024 Sticker Shop. All rights reserved.</p>
-            <p>Made with ❤️ by aziz</p>
+        <div class="gallery">
+            <div class="lightbox">
+                <span class="close">&times;</span>
+                <img class="lightbox-content" src="" alt="">
+            </div>
+            <div id="thumbnails" class="thumbnails"></div>
         </div>
-    </footer>
-
-    <div class="lightbox">
-        <span class="close">&times;</span>
-        <img class="lightbox-content" src="" alt="">
     </div>
-
     <script src="script.js"></script>
 </body>
 </html>
