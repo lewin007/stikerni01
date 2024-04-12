@@ -1,11 +1,11 @@
 document.addEventListener("DOMContentLoaded", function() {
-    const thumbnailsContainer = document.querySelector('.thumbnails');
+    const thumbnailsContainer = document.getElementById('thumbnails');
     const lightbox = document.querySelector('.lightbox');
     const lightboxContent = document.querySelector('.lightbox-content');
 
-    const totalImages = 49; // Change this to match the total number of images
+    // Replace 49 with the actual number of images you have
+    const totalImages = 49;
 
-    // Generate thumbnails
     for (let i = 1; i <= totalImages; i++) {
         const img = document.createElement('img');
         img.src = `images/stiker (${i}).JPG`;
@@ -17,7 +17,6 @@ document.addEventListener("DOMContentLoaded", function() {
         thumbnailsContainer.appendChild(img);
     }
 
-    // Close lightbox
     const closeButton = document.querySelector('.close');
     closeButton.addEventListener('click', function() {
         lightbox.style.display = 'none';
