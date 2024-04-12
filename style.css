@@ -1,23 +1,105 @@
-body {
-    font-family: Arial, sans-serif;
+/* Reset CSS */
+* {
     margin: 0;
     padding: 0;
-    background-color: #f3f3f3;
+    box-sizing: border-box;
 }
 
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
     padding: 20px;
     text-align: center;
+    position: relative;
+    z-index: 2;
 }
 
-h1 {
-    color: #333;
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ddd;
+}
+
+section {
+    padding: 40px;
 }
 
 .gallery {
+    background-color: #fff;
     position: relative;
+    z-index: 1;
+}
+
+.gallery h2 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.thumbnails {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.thumbnails img {
+    width: 200px;
+    height: auto;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.thumbnails img:hover {
+    transform: scale(1.1);
+}
+
+.contact {
+    background-color: #f5f5f5;
+    text-align: center;
+}
+
+.contact h2 {
+    margin-bottom: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .lightbox {
@@ -46,23 +128,4 @@ h1 {
     color: #fff;
     cursor: pointer;
     z-index: 1100;
-}
-
-.thumbnails {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.thumbnails img {
-    width: 200px;
-    height: auto;
-    margin: 10px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
-}
-
-.thumbnails img:hover {
-    transform: scale(1.1);
 }
